@@ -915,17 +915,18 @@ h3 {
   }
   
 
-  /* Botones del slider */
+  /* Botones del carrusel */
   .carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #A3005A;
     color: white;
-    border: none;
-    padding: 10px;
+    border: 2px solid white;
+    padding: 8px;
     cursor: pointer;
     z-index: 1;
+    font-size: 20px;
   }
   
   .carousel-button.prev {
