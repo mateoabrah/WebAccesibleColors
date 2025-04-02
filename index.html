@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Compra les teves entrades per als millors esdeveniments de Barcelona. Concerts, festivals, teatre i més. Gaudeix d'una experiència única.">
+    <meta name="author" content="Esdeveniments Únics">
+    <meta name="robots" content="index, follow">
+    <title>TicketFlow - Venda d'Entrades</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Cabecera de la página -->
+    <header role="banner">
+        <div class="banner">
+            <img class="banner-img" src="pexels-wendywei-1190298.jpg" alt="Banner de TicketFlow">
+            <div class="banner-text">
+                <h1>TicketFlow</h1>
+                <p>La teva clau a una experiència única</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav role="navigation">
+        <ul>
+            
+            <li><a href="index.html" aria-current="page" tabindex="1">Inici</a></li>
+            <li><a href="eventos.html" tabindex="2">Esdeveniments</a></li>
+            <li><a href="#programa" tabindex="3">Programa</a></li>
+            <li><a href="#entrades" tabindex="4">Tipus d'Entrades</a></li>
+            <li><a href="#inscripcio" tabindex="5">Reserva</a></li>
+            <li><a href="#faq" tabindex="6">FAQ</a></li>
+            <li><a href="#footer" tabindex="7">Contacte</a></li>
+            <li><a href="resultados.html" tabindex="8">Resultats Tests</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main role="main">
+
+        <!-- Sección Inicio -->
+        <section id="inici" aria-labelledby="inici-heading">
+            <div class="inici-container">
+                <h2 id="inici-heading">Benvinguts a TicketFlow!</h2>
+                <img src="Foto_1.jpeg" alt="Logo TicketFlow" class="logo-inici">
+                <p class="inici-descripcio">Descobreix els millors esdeveniments i aconsegueix la teva
+                    entrada
+                    fàcilment. Concerts, festivals, teatre i molt més t’esperen!<br><br>
+                    Rebem milers de visitants cada dia que busquen viure experiències úniques
+                    com la que podries viure avui mateix.</p><br>
+                <button href="#eventos" class="btn-submit" tabindex="8">Descobreix més</button>
+            </div>
+        </section>
+
+        <!-- Evento destacado -->
+        <section id="eventos" aria-labelledby="eventos-heading">
+            <h2 id="eventos-heading">Esdeveniment Destacat</h2>
+            <article class="evento-card" role="article">
+                <h3>ANYMA</h3>
+                <div class="carousel" role="group" aria-label="Carrusel d'imatges">
+                    <img src="anyma.jpg" alt="ANYMA en concert" class="img-principal">
+                    <img src="STILL_16X9-scaled.jpg" alt="ANYMA en concert 2" class="img-secundaria">
+                    <img src="Tale-Of-Us-Afterlife-at-Hi-Ibiza-04.jpg" alt="ANYMA en concert 3" class="img-secundaria">
+
+                    <!-- Botones para el carrusel -->
+                    <button class="carousel-button prev" tabindex="9" aria-label="Imatge anterior">←</button>
+                    <button class="carousel-button next" tabindex="10" aria-label="Imatge següent">→</button>
+                </div>
+
+                <!-- Créditos de las imágenes -->
+                <div class="imagen-creditos">
+                    <p>Imágenes obtenidas de:
+                        <a href="https://edmhousenetwork.com/afterlife-and-anyma-present-the-end-of-genesys-live-at-sphere-las-vegas-first-edm-act-at-sphere/"
+                            target="_blank" rel="noopener noreferrer" tabindex="11">EDM House Network</a>,
+                        <a href="https://www.electricdust.net/fue-anunciado-el-lineup-completo-de-anyma-the-end-of-genesys/"
+                            target="_blank" rel="noopener noreferrer" tabindex="12">Electric Dust</a>,
+                        <a href="https://weraveyou.com/2024/03/afterlife-miami-music-week-lineup/" target="_blank"
+                            rel="noopener noreferrer" tabindex="13">We Rave You</a>
+                    </p>
+                </div>
+
+                <!-- Información del evento -->
+                <div class="etiquetes">
+                    <p><span>Lloc:</span> TECH-UMAN Club, Barcelona</p>
+                    <p><span>Data:</span> 12 de Abril 2025</p>
+                    <p><span>Hora:</span> 22:00</p>
+                </div>
+                <p class="descripcion">Vine a gaudir d'una nit inoblidable amb <b>ANYMA</b>, un dels
+                    artistes més
+                    innovadors de l'escena musical actual. Aquesta actuació única et sorprendrà amb una fusió de ritmes
+                    electrònics i
+                    melodies que t'ompliran d'energia.
+                    <br><br>
+                    <b>ANYMA</b> ofereix un espectacle vibrant, amb visuals espectaculars i una posada en escena que et
+                    farà viure una
+                    experiència immersiva. Si t'agrada la música electrònica, no et pots perdre aquesta oportunitat de
+                    gaudir d'una
+                    nit carregada d'emocions i ritmes en directe.
+                </p>
+                <br>
+                <button type="submit" class="btn-submit" tabindex="14">Reserva les teves entrades</button>
+            </article>
+        </section>
+
+        <!-- Tipos de entradas -->
+        <section id="entrades" aria-labelledby="entrades-heading">
+            <h2 id="entrades-heading">Tipus d'Entrades</h2>
+            <div class="entrades-container">
+                <div class="entrada-card" role="region" aria-labelledby="entrada-general">
+                    <h3 id="entrada-general">General</h3>
+                    <p>Accés a la zona principal de l'esdeveniment. Una opció ideal per gaudir del concert
+                        amb els
+                        amics.</p>
+                    <button class="btn-submit" tabindex="15">Seleccionar</button>
+                </div>
+                <div class="entrada-card" role="region" aria-labelledby="entrada-vip">
+                    <h3 id="entrada-vip">VIP</h3>
+                    <p>Accés a zona exclusiva amb seients preferents i servei especial. Per a aquells que
+                        busquen un
+                        tracte més personalitzat.</p>
+                    <button class="btn-submit" tabindex="16">Seleccionar</button>
+                </div>
+                <div class="entrada-card" role="region" aria-labelledby="entrada-premium">
+                    <h3 id="entrada-premium">Premium</h3>
+                    <p>Tot el que ofereix VIP més backstage pass, per a una experiència completa
+                        d'immersió en
+                        l'esdeveniment.</p>
+                    <button class="btn-submit" tabindex="17">Seleccionar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de inscripción -->
+        <section id="inscripcio" aria-labelledby="inscripcio-heading">
+            <h2 id="inscripcio-heading">Reserva la teva entrada</h2>
+            <p>Fes el teu registre a continuació per garantir la teva entrada. Rebràs un correu electrònic
+                de
+                confirmació amb tots els detalls de l'esdeveniment.</p><br>
+            <form action="#" method="post" role="form">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required tabindex="18" aria-required="true">
+
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" name="email" required tabindex="19" aria-required="true">
+
+                <fieldset>
+                    <legend>Selecciona la teva entrada</legend>
+                    <label><input type="radio" name="entrada" value="general" tabindex="20">
+                        General</label>
+                    <label><input type="radio" name="entrada" value="vip" tabindex="21"> VIP</label>
+                    <label><input type="radio" name="entrada" value="premium" tabindex="22">
+                        Premium</label>
+                </fieldset>
+
+                <button type="submit" class="btn-submit" tabindex="23">Reservar Entrada</button>
+            </form>
+        </section>
+
+        <!-- Programa del evento -->
+        <section id="programa" aria-labelledby="programa-heading">
+            <h2 id="programa-heading">Programa</h2>
+            <table role="table">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Activitat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>19:00</td>
+                        <td>Obertura de portes</td>
+                    </tr>
+                    <tr>
+                        <td>20:30</td>
+                        <td>Henry Saiz</td>
+                    </tr>
+                    <tr>
+                        <td>22:00</td>
+                        <td><b>ANYMA</b></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" style="text-align: center; font-style: italic;">
+                            Per a més informació, contacta'ns a
+                            <a href="mailto:info@ticketflow.com" style="color: #6c4e97; text-decoration: underline;"
+                                tabindex="24">
+                                info@ticketflow.com
+                            </a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Ubicación del evento -->
+        <section id="ubicacio" aria-labelledby="ubicacio-heading">
+            <h2 id="ubicacio-heading">Ubicació</h2>
+            <div class="ubicacio-container">
+                <div class="logo-container">
+                    <img src="Logo_Tech-uman_Club.png" alt="Logo TECH-UMAN Club" class="logo-techuman">
+                </div>
+                <div class="info-container">
+                    <h3 class="nombre-sitio">TECH-UMAN Club</h3>
+                    <p>Una de les sales més icòniques de la ciutat per gaudir d'esdeveniments de gran
+                        nivell.</p>
+                    <p><strong>Adreça:</strong> Carrer del Techno, 10110, Barcelona
+                    </p>
+                    <p><strong>Telèfon:</strong> +1011 900 11 00 11</p>
+                    <p><strong>Horari:</strong> Obert tots els dies de 20:00 a 03:00</p>
+                </div>
+            </div>
+            <div class="mapa-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.365340816198!2d2.190228197533961!3d41.39761453849432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3f7d8c8b5b5%3A0x9b8c5b5b5b5b5b5b5!2sPla%C3%A7a%20de%20Catalunya!5e0!3m2!1ses!2ses!4v1633020000000!5m2!1ses!2ses"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    aria-label="Mapa de ubicació del TECH-UMAN Club" tabindex="25">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Preguntas frecuentes -->
+        <section id="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Preguntes Freqüents (FAQ)</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question" tabindex="26">
+                        <span class="faq-icon">➕</span>
+                        Com puc comprar una entrada?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Pots reservar-la a través del nostre formulari d'inscripció i rebràs un correu
+                            de confirmació
+                            amb tots els detalls per accedir a l'esdeveniment.</p>
+                    </div>
+                </details>
+
+
+                <details class="faq-item">
+                    <summary class="faq-question" tabindex="27">
+                        <span class="faq-icon">➕</span>
+                        Hi ha devolucions disponibles?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>No s'accepten devolucions, però pots transferir la teva entrada a una altra
+                            persona. Si tens
+                            cap dubte, contacta'ns.</p>
+                    </div>
+                </details>
+
+
+                <details class="faq-item">
+                    <summary class="faq-question" tabindex="28">
+                        <span class="faq-icon">➕</span>
+                        Quins mètodes de pagament accepteu?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Acceptem targetes de crèdit/dèbit, PayPal i altres mètodes segurs per garantir
+                            una compra
+                            fàcil i ràpida.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Patrocinadores -->
+        <section id="patrocinadors" aria-labelledby="patrocinadors-heading">
+            <h2 id="patrocinadors-heading">Patrocinadors</h2>
+            <p class="descripcio-patrocinadors">Agraïm el suport dels nostres patrocinadors per fer
+                realitat aquest
+                esdeveniment.</p>
+            <div class="patrocinadors-container">
+                <div class="patrocinador-card" role="region" aria-labelledby="patrocinador-arcental">
+                    <img src="Logo_Alcental.png" alt="Logo Arcental" class="logo-patrocinador">
+                    <p class="nom-patrocinador" id="patrocinador-arcental">Arcental</p>
+                </div>
+                <div class="patrocinador-card" role="region" aria-labelledby="patrocinador-barnas">
+                    <img src="Logo_Barnas.png" alt="Logo Barnas" class="logo-patrocinador">
+                    <p class="nom-patrocinador" id="patrocinador-barnas">Barnas</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Segueix-nos</h3>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank" aria-label="Segueix-nos a Twitter" tabindex="29"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank" aria-label="Segueix-nos a Facebook" tabindex="30"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank" aria-label="Segueix-nos a Instagram" tabindex="31"><i
+                                class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Enllaços útils</h3>
+                <ul class="useful-links">
+                    <li><a href="#avís-legal" tabindex="32">Avís legal</a></li>
+                    <li><a href="#politica-privacitat" tabindex="33">Política de privacitat</a></li>
+                    <li><a href="#contacte" tabindex="34">Contacte</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacte</h3>
+                <a href="mailto:info@ticketflow.com" tabindex="34">info@ticketflow.com</a>
+                <p>+34 123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TicketFlow. Tots els drets reservats.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

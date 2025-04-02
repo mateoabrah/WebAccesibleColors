@@ -1,0 +1,1198 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('pexels-codioful-7135054.jpg');
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+
+/* Header */
+header {
+    background: #ffffff;
+    color: #222;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Menú de navegación */
+nav {
+    background-color: #3F245C;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 3px solid rgba(63, 36, 92, 1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #E9D941;
+    transform: scale(1.1);
+}
+
+/* Muestro la página activa con css + ARIA current */
+nav a[aria-current="page"] {
+    color: #00DBDB;
+}
+
+
+
+/* Contenido principal */
+main {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f5ff;
+    background-color: #fff4f2;
+}
+
+section {
+    margin-bottom: 80px;
+    padding: 50px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+section h2 {
+    font-size: 3rem;
+    color: #A80062;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+/* Secciones adicionales */
+#eventos, #entrades, #faq, #contacte {
+    margin-bottom: 80px;
+    padding: 50px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#eventos h2, #entrades h2, #faq h2, #contacte h2 {
+    font-size: 2.8rem;
+    color: #A3005A;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+/* Contenedor de imagen y botón */
+.imagen-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* Botón */
+.btn-submit {
+    background: linear-gradient(90deg, #3F245C, #A80062);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(90deg, #A80062, #3F245C);
+    transform: scale(1.05);
+}
+
+
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #3F245C;
+    font-weight: 600;
+}
+
+input, button {
+    padding: 15px;
+    /* border: none; */
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+input {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #3F245C;
+}
+
+input:focus {
+    border-color: #A80062;
+    outline: none;
+}
+
+
+
+/* Estilos para el banner */
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+
+/* Overlay semitransparente */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 2;
+}
+
+.banner-text h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.9);
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.9);
+}
+
+
+
+/* Estilos para fieldset */
+fieldset {
+    border: 2px solid #3F245C;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilos para la leyenda (legend) */
+legend {
+    font-size: 1.2rem;
+    color: #3F245C;
+    font-weight: 600;
+    padding: 0 10px;
+    background-color: #fff;
+    background-color: #ffe1df;
+    border: 2px solid #3F245C;
+    border-radius: 8px;
+}
+
+/* Alinear los radio buttons verticalmente con flexbox */
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Estilos para los inputs de tipo radio */
+fieldset input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #ff2b95;
+}
+
+
+
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+th {
+    background-color: #3F245C;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #ffb8b1;
+    transition: background-color 0.3s ease;
+}
+
+tfoot td {
+    background-color: #ffffff;
+    color: #3F245C;
+    font-size: 0.9rem;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    border-top: 2px solid #3F245C;
+}
+
+
+/* Estilos para el programa */
+#programa {
+    padding: 50px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#programa h2 {
+    font-size: 3rem;
+    color: #A3005A;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Estilos para los tipos de entradas */
+.entrades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.entrada-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entrada-card:hover {
+    background-color: #ffb8b1;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.entrada-card h3 {
+    font-size: 1.5rem;
+    color: #3F245C;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.entrada-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.entrada-card .btn-submit {
+    background: linear-gradient(90deg, #3F245C, #A80062);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.entrada-card .btn-submit:hover {
+    background: linear-gradient(90deg, #A80062, #3F245C);
+    transform: scale(1.05);
+}
+
+
+/* Estilos para las FAQ */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.faq-question {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3F245C;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.faq-question::marker {
+    display: none;
+}
+
+
+.faq-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+
+.faq-item[open] .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 20px 20px 20px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+#faq h2 {
+    font-size: 3rem;
+    color: #A3005A;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Estilos para la ubicaciòn */
+.nombre-sitio {
+    font-size: 2rem;
+    color: #3F245C;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.ubicacio-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.logo-container {
+    flex: 1;
+    text-align: center;
+    
+}
+
+.logo-techuman {
+    max-width: 200px;
+    height: auto;
+    border-radius: 100px;
+}
+
+.logo-container img:hover{
+    transform: none;
+}
+
+
+
+.info-container {
+    flex: 2;
+    text-align: left;
+}
+
+.info-container p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.info-container strong {
+    color: #3F245C;
+}
+
+.mapa-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#ubicacio h2 {
+    font-size: 3rem;
+    color: #A3005A;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+/* Estilos para los patrocinadores */
+#patrocinadors {
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#patrocinadors h2 {
+    font-size: 3rem;
+    color: #A3005A;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.descripcio-patrocinadors {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.patrocinadors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.patrocinador-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 200px;
+}
+
+.patrocinador-card:hover {
+    /* transform: translateY(-10px); */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.patrocinador-card img {
+    border-radius: 100px;
+    transform: none;
+}
+
+.logo-patrocinador {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.nom-patrocinador {
+    font-size: 1.2rem;
+    color: #3F245C;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #3F245C;
+    color: #fff;
+    padding: 40px 20px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #E9D941;
+    transform: scale(1.1);
+}
+
+.useful-links {
+    list-style: none;
+    padding: 0;
+}
+
+.useful-links li {
+    margin-bottom: 10px;
+}
+
+.useful-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.useful-links a:hover {
+    color: #E9D941;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #E9D941;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos para el artículo inicial (inici) */
+#inici {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.inici-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#inici h2 {
+    font-size: 4rem;
+    color: #A3005A;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.inici-descripcio {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#inici .btn-submit {
+    background: linear-gradient(90deg, #3F245C, #A80062);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+#inici .btn-submit:hover {
+    background: linear-gradient(90deg, #A80062, #3F245C);
+    transform: scale(1.05);
+}
+
+
+/* Estilos para la sección de eventos */
+#eventos {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#eventos h2 {
+    font-size: 3rem;
+    color: #A3005A;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.evento-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.img-evento {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-evento:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.evento-card h3 {
+    font-size: 2rem;
+    color: #3F245C;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.evento-card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.evento-card .btn-submit {
+    background: linear-gradient(90deg, #3F245C, #A80062);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.evento-card .btn-submit:hover {
+    background: linear-gradient(90deg, #A80062, #3F245C);
+    transform: scale(1.05);
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #00DBDB;
+}
+
+  /* Estilo para los derechos de autor */
+  .imagen-creditos {
+    color: #777;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.imagen-creditos p {
+    font-size: 0.8em;
+}
+
+.imagen-creditos a {
+    font-size: 0.9em;
+    color: #A3005A;
+    text-decoration: none;
+}
+
+.imagen-creditos a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Estilos para las etiquetas del evento */
+.etiquetes p {
+    font-size: 1.1em;
+    margin: 10px 6px;
+    padding: 4px 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #3F245C;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.etiquetes p:hover {
+    background-color: #A3005A;
+    color: #fff;
+}
+
+.img-principal {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+
+
+  
+
+/* Estilo para el carrusel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+
+  /* Botones del slider */
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  
+
+
+
+/* Estilos al prestionar el tabulador */
+*:focus-visible {
+    width: auto;
+    outline: 3px solid #00DBDB; 
+    border-radius: 8px;
+    border: 1px solid #00DBDB;
+    border-bottom: 4px solid #00DBDB;
+    border-right: 4px solid #00DBDB;
+    transition: outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+    padding: 3px;
+}
+
+
+img:focus-visible {
+    outline: 3px solid #00DBDB;
+    border-radius: 5px;
+}
+
+
+a:focus-visible {
+    outline: none;
+    border-bottom: 2px solid #00DBDB;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+
+input:focus-visible, textarea:focus-visible, button:focus-visible, select:focus-visible {
+    outline: 3px solid #00DBDB;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+input:focus-visible {
+    border: 1px solid #00DBDB;
+    transition: all 0.3s ease-in-out;
+}
+
+button:focus-visible {
+    border: 1px solid #00DBDB;
+    transition: all 0.3s ease-in-out;
+}
+
+
+select:focus-visible {
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Deshabilitar el foco con clic */
+*:focus {
+    outline: none;
+}
+
+
+
+/* Media queries para diseño responsivo */
+
+/* Meta viewport (asegúrate de añadir esto en tu HTML) */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+/* Dispositivos extra pequeños (teléfonos, menos de 576px) */
+@media (max-width: 575.98px) {
+    /* Header */
+    header {
+        font-size: 1.8rem;
+        padding: 15px 0;
+    }
+
+    /* Navegación */
+    nav {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    /* Banner */
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+
+    /* Secciones */
+    section, #eventos, #entrades, #faq, #contacte, #programa, #patrocinadors {
+        padding: 25px 15px;
+        margin-bottom: 40px;
+    }
+
+    section h2, #eventos h2, #entrades h2, #faq h2, #contacte h2, #programa h2, #patrocinadors h2, #ubicacio h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    /* Formulario */
+    form {
+        padding: 0 10px;
+    }
+
+    /* Ubicación */
+    .ubicacio-container {
+        flex-direction: column;
+    }
+
+    /* Patrocinadores */
+    .patrocinadors-container {
+        gap: 15px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Tarjetas de eventos */
+    .evento-card h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Tarjetas de entradas */
+    .entrades-container {
+        gap: 20px;
+    }
+    
+    .entrada-card {
+        width: 100%;
+    }
+
+    /* Tabla */
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+/* Dispositivos pequeños (tablets pequeñas, 576px hasta 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Header */
+    header {
+        font-size: 2.2rem;
+    }
+
+    /* Banner */
+    .banner-text h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Secciones */
+    section h2, #eventos h2, #entrades h2, #faq h2, #contacte h2, #programa h2, #patrocinadors h2, #ubicacio h2 {
+        font-size: 2.2rem;
+    }
+
+    /* Navegación */
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    /* Ubicación */
+    .ubicacio-container {
+        flex-direction: column;
+    }
+}
+
+/* Dispositivos medianos (tablets, 768px hasta 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Header */
+    header {
+        font-size: 2.5rem;
+    }
+
+    /* Secciones */
+    section, #eventos, #entrades, #faq, #contacte, #programa, #patrocinadors {
+        padding: 40px 30px;
+    }
+
+    /* Tarjetas de entradas */
+    .entrades-container {
+        justify-content: space-around;
+    }
+}
+
+/* Dispositivos grandes (desktops, 992px hasta 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    main {
+        padding: 60px 15px;
+    }
+}
+
+/* Mejoras generales para interactividad táctil */
+@media (hover: none) {
+    /* Mejora botones para dispositivos táctiles */
+    .btn-submit, button, .carousel-button {
+        padding: 15px 25px;
+    }
+    
+    /* Aumentar área táctil para enlaces de navegación */
+    nav ul li a {
+        padding: 10px;
+    }
+    
+    /* Ajustes para FAQ en dispositivos táctiles */
+    .faq-question {
+        padding: 15px;
+    }
+}
+
+/* Ajustes para imágenes responsivas */
+@media (max-width: 767.98px) {
+    .img-evento, .logo-patrocinador, .logo-techuman {
+        max-width: 80%;
+    }
+}
+
+/* Para impresión */
+@media print {
+    nav, .btn-submit, footer {
+        display: none;
+    }
+    
+    body {
+        background-image: none;
+        color: #000;
+        background-color: #fff;
+    }
+    
+    section, #eventos, #entrades, #faq, #contacte, #programa, #patrocinadors {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+
+
+
+/* Estilo para el h3 de los Resultados */
+#h3-resultats-style {
+    font-size: 2.6rem;
+    color: #3F245C;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
