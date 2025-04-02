@@ -350,6 +350,10 @@ tfoot td {
     border-top: 2px solid #3F245C;
 }
 
+#info-table {
+    color: #A3005A;
+}
+
 
 /* Estilos para el programa */
 #programa {
